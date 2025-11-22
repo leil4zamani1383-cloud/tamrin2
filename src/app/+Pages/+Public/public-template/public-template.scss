@@ -1,0 +1,31 @@
+#banner{
+    background-color: rgba(75, 136, 216, 0.904);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    padding: 1.5em;
+}
+#menu{
+    display: flex;
+    padding: 0.5em;
+    background-color:rgba(124, 171, 233, 0.904);
+    gap: 0.3em;
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: rgba(75, 136, 216, 0.904);
+        border-radius: 0.2em;
+        padding: 0.3em;
+        min-width: 80px;
+        text-align: center;
+    }
+    a:hover{
+        background-color: rgba(236, 236, 219, 0.856);
+        color: black;
+    }
+    .divider{
+        flex: 1 1 auto;
+    }
+}
