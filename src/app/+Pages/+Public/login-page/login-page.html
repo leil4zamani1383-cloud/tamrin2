@@ -1,13 +1,25 @@
 <search class="login">
     <div>
-        <label>نام کاربری</label>
-        <input type="text"placeholder="نام کاربری">
+        <label for="username">نام کاربری</label>
+        <input [(ngModel)]="username" id="username" type="text"placeholder="نام کاربری">
     </div>
     <div>
-        <label>کلمه عبور</label>
-        <input type="password"placeholder="کلمه عبور">
+        <label for="password">کلمه عبور</label>
+        <input [(ngModel)]="password" id="password" type="password"placeholder="کلمه عبور">
     </div>
     <div>
-        <button>ورود</button>
+        <input {(ngModel)}="remember" id="remember" type="checkbox">
+        <label for="remember">
+            من راه به خاطر بسپار
+        </label>
+        
+    </div>
+    <div>
+        <button (click)="test()">ورود</button>
+    </div>
+    
+    <div class="message">
+        {{message}}
     </div>
 </search>
+   
