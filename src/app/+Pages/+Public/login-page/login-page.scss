@@ -29,6 +29,9 @@
             border-radius: 0.3em;
             padding: 0.3em;
         }
+        button[disabled]{
+         background-color:darkgray;
+        }
     }
   .message{
     background-color: aqua;
@@ -38,4 +41,3 @@
   }
 
 }
- 

@@ -15,11 +15,12 @@
         
     </div>
     <div>
-        <button (click)="test()">ورود</button>
+        <button [disabled]="username==''|| password=='' " (click)="test()">ورود</button>
     </div>
-    
-    <div class="message">
+    @if (message!='') {
+         <div class="message">
         {{message}}
-    </div>
+    </div>  
+    }
 </search>
    
