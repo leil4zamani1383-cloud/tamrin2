@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterLinkWithHref, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
-  imports: [FormsModule],
+  imports: [RouterOutlet,RouterLinkWithHref,FormsModule],
   templateUrl: './login-page.html',
   styleUrl: './login-page.scss',
 })
@@ -12,7 +12,7 @@ export class LoginPage {
   username:string='';
   password:string='';
   remember:boolean=false;
-  message:string=' ';
+  message:string='';
   router=inject(Router);//در اینجا به روتر انگولار احتیاج داریم
   test(){
     if (this.username=='admin'&& this.password=='admin'){
